@@ -10,4 +10,16 @@ const produtos = [
     { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
- 
+
+const produtoLimpeza = produtos.filter((valor) => {
+    return valor.categoria === "Limpeza"
+
+})
+
+const nomeProdutos = produtoLimpeza.map((item) => {
+    return item.nome
+})
+
+console.log(nomeProdutos)
+
+console.log(produtoLimpeza)
